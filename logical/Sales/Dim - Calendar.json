@@ -308,7 +308,7 @@
         "displayKey" : "YEAR"
       } ],
       "logicalHierarchies" : [ {
-        "name" : "H1",
+        "name" : "Calendar",
         "levels" : [ "Total", "Year", "Detail" ]
       } ]
     }
