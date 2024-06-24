@@ -288,7 +288,7 @@
     "levelBasedHierarchy" : {
       "defaultRootLevel" : "Total",
       "ragged" : false,
-      "skipped" : false,
+      "skipped" : true,
       "logicalLevels" : [ {
         "name" : "Total",
         "numberOfElements" : 1,
