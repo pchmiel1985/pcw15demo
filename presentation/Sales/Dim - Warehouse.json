@@ -1,0 +1,45 @@
+{
+  "presentationTable" : {
+    "name" : "Dim - Warehouse",
+    "presentationColumns" : [ {
+      "name" : "Store Id",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Warehouse.Store Id"
+    }, {
+      "name" : "Warehouse Id",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Warehouse.Warehouse Id"
+    }, {
+      "name" : "WAREHOUSE",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Warehouse.WAREHOUSE"
+    }, {
+      "name" : "Min Ship Time",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Warehouse.Min Ship Time"
+    }, {
+      "name" : "Max Ship Time",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Warehouse.Max Ship Time"
+    }, {
+      "name" : "WH Street",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Warehouse.WH Street"
+    }, {
+      "name" : "WH State",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Warehouse.WH State"
+    }, {
+      "name" : "WH City",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Warehouse.WH City"
+    }, {
+      "name" : "WH Zip",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Warehouse.WH Zip"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Warehouse",
+      "sourceLogicalTable" : "logicalTable:Sales.Dim - Warehouse",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Warehouse.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Warehouse.Detail",
+        "displayColumn" : "presentationColumn:Sales.Dim - Warehouse.Store Id"
+      } ]
+    } ]
+  }
+}

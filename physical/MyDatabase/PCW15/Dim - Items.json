@@ -1,0 +1,7 @@
+{
+  "physicalTable" : {
+    "name" : "Dim - Items",
+    "sourceTable" : "physicalTable:MyDatabase.PCW15.PCW15_D_ITEMS",
+    "overrideSourceCacheSetting" : false
+  }
+}

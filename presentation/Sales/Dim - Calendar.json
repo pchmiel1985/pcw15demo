@@ -1,0 +1,84 @@
+{
+  "presentationTable" : {
+    "name" : "Dim - Calendar",
+    "presentationColumns" : [ {
+      "name" : "Day Date",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Calendar.Day Date"
+    }, {
+      "name" : "D Nm",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Calendar.D Nm"
+    }, {
+      "name" : "Day in Month",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Calendar.Day in Month"
+    }, {
+      "name" : "Day in Year",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Calendar.Day in Year"
+    }, {
+      "name" : "Week End",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Calendar.Week End"
+    }, {
+      "name" : "Mth Nm",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Calendar.Mth Nm"
+    }, {
+      "name" : "MTH#",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Calendar.MTH#"
+    }, {
+      "name" : "Mth# Nm",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Calendar.Mth# Nm"
+    }, {
+      "name" : "QTR",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Calendar.QTR"
+    }, {
+      "name" : "YEAR",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Calendar.YEAR"
+    }, {
+      "name" : "Per Y Qtr",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Calendar.Per Y Qtr"
+    }, {
+      "name" : "Per Y Mth#",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Calendar.Per Y Mth#"
+    }, {
+      "name" : "Fin Mth#",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Calendar.Fin Mth#"
+    }, {
+      "name" : "Fin Qtr",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Calendar.Fin Qtr"
+    }, {
+      "name" : "Fin Year",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Calendar.Fin Year"
+    }, {
+      "name" : "Per Fin Qtr",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Calendar.Per Fin Qtr"
+    }, {
+      "name" : "Per Fin Mth#",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Calendar.Per Fin Mth#"
+    }, {
+      "name" : "Fin Mth# Nm",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Calendar.Fin Mth# Nm"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Calendar",
+      "sourceLogicalTable" : "logicalTable:Sales.Dim - Calendar",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Calendar.Total"
+      }, {
+        "name" : "Year",
+        "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Calendar.Year",
+        "displayColumn" : "presentationColumn:Sales.Dim - Calendar.YEAR"
+      }, {
+        "name" : "Quarter",
+        "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Calendar.Quarter",
+        "displayColumn" : "presentationColumn:Sales.Dim - Calendar.QTR"
+      }, {
+        "name" : "Month",
+        "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Calendar.Month",
+        "displayColumn" : "presentationColumn:Sales.Dim - Calendar.MTH#"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Calendar.Detail",
+        "displayColumn" : "presentationColumn:Sales.Dim - Calendar.Day Date"
+      } ]
+    } ]
+  }
+}

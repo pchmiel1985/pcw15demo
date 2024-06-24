@@ -1,0 +1,53 @@
+{
+  "physicalTable" : {
+    "name" : "Fact - Sales",
+    "sourceTable" : "physicalTable:MyDatabase.PCW15.PCW15_F_SALES",
+    "overrideSourceCacheSetting" : false,
+    "joins" : [ {
+      "rightTable" : "physicalTable:MyDatabase.PCW15.Dim - Calendar",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MyDatabase.PCW15.Fact - Sales.Sales Date",
+        "rightColumn" : "physicalColumn:MyDatabase.PCW15.Dim - Calendar.Day Date"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    }, {
+      "rightTable" : "physicalTable:MyDatabase.PCW15.Dim - Stores",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MyDatabase.PCW15.Fact - Sales.Store Id",
+        "rightColumn" : "physicalColumn:MyDatabase.PCW15.Dim - Stores.Store Id"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    }, {
+      "rightTable" : "physicalTable:MyDatabase.PCW15.Dim - Items",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MyDatabase.PCW15.Fact - Sales.Item Id",
+        "rightColumn" : "physicalColumn:MyDatabase.PCW15.Dim - Items.Item Id"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    }, {
+      "rightTable" : "physicalTable:MyDatabase.PCW15.Dim - Warehouse",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MyDatabase.PCW15.Fact - Sales.Store Id",
+        "rightColumn" : "physicalColumn:MyDatabase.PCW15.Dim - Warehouse.Store Id"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    }, {
+      "rightTable" : "physicalTable:MyDatabase.PCW15.Dim - Deliveries",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MyDatabase.PCW15.Fact - Sales.Order #",
+        "rightColumn" : "physicalColumn:MyDatabase.PCW15.Dim - Deliveries.Order #"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    } ]
+  }
+}

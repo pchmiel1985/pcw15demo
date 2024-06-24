@@ -1,0 +1,40 @@
+{
+  "presentationTable" : {
+    "name" : "Dim - Items",
+    "presentationColumns" : [ {
+      "name" : "Item Id",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Items.Item Id"
+    }, {
+      "name" : "OS",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Items.OS"
+    }, {
+      "name" : "CATEGORY",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Items.CATEGORY"
+    }, {
+      "name" : "Item Type",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Items.Item Type"
+    }, {
+      "name" : "Item Name",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Items.Item Name"
+    }, {
+      "name" : "RRP",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Items.RRP"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Items",
+      "sourceLogicalTable" : "logicalTable:Sales.Dim - Items",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Items.Total"
+      }, {
+        "name" : "Category",
+        "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Items.Category",
+        "displayColumn" : "presentationColumn:Sales.Dim - Items.CATEGORY"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Items.Detail",
+        "displayColumn" : "presentationColumn:Sales.Dim - Items.Item Id"
+      } ]
+    } ]
+  }
+}

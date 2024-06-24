@@ -1,0 +1,50 @@
+{
+  "presentationTable" : {
+    "name" : "Dim - Stores",
+    "presentationColumns" : [ {
+      "name" : "Store Id",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Stores.Store Id"
+    }, {
+      "name" : "STORE",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Stores.STORE"
+    }, {
+      "name" : "BUYER",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Stores.BUYER"
+    }, {
+      "name" : "Store Type",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Stores.Store Type"
+    }, {
+      "name" : "STREET",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Stores.STREET"
+    }, {
+      "name" : "STATE",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Stores.STATE"
+    }, {
+      "name" : "CITY",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Stores.CITY"
+    }, {
+      "name" : "ZIP",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Stores.ZIP"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Stores",
+      "sourceLogicalTable" : "logicalTable:Sales.Dim - Stores",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Stores.Total"
+      }, {
+        "name" : "City",
+        "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Stores.City",
+        "displayColumn" : "presentationColumn:Sales.Dim - Stores.CITY"
+      }, {
+        "name" : "State",
+        "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Stores.State",
+        "displayColumn" : "presentationColumn:Sales.Dim - Stores.STATE"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Stores.Detail",
+        "displayColumn" : "presentationColumn:Sales.Dim - Stores.Store Id"
+      } ]
+    } ]
+  }
+}

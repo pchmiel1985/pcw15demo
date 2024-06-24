@@ -1,0 +1,7 @@
+{
+  "physicalTable" : {
+    "name" : "Dim - Warehouse",
+    "sourceTable" : "physicalTable:MyDatabase.PCW15.PCW15_D_WAREHOUSE",
+    "overrideSourceCacheSetting" : false
+  }
+}

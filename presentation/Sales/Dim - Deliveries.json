@@ -1,0 +1,36 @@
+{
+  "presentationTable" : {
+    "name" : "Dim - Deliveries",
+    "presentationColumns" : [ {
+      "name" : "Order #",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Deliveries.Order #"
+    }, {
+      "name" : "UNITS",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Deliveries.UNITS"
+    }, {
+      "name" : "Delivery Date",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Deliveries.Delivery Date"
+    }, {
+      "name" : "Order Date",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Deliveries.Order Date"
+    }, {
+      "name" : "Delivery Store Id",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Deliveries.Delivery Store Id"
+    }, {
+      "name" : "Days to Deliver",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Deliveries.Days to Deliver"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Deliveries",
+      "sourceLogicalTable" : "logicalTable:Sales.Dim - Deliveries",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Deliveries.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Deliveries.Detail",
+        "displayColumn" : "presentationColumn:Sales.Dim - Deliveries.Order #"
+      } ]
+    } ]
+  }
+}

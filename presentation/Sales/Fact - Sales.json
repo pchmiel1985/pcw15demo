@@ -1,0 +1,15 @@
+{
+  "presentationTable" : {
+    "name" : "Fact - Sales",
+    "presentationColumns" : [ {
+      "name" : "Order #",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Fact - Sales.Order #"
+    }, {
+      "name" : "UNITS",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Fact - Sales.UNITS"
+    }, {
+      "name" : "REVENUE",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Fact - Sales.REVENUE"
+    } ]
+  }
+}

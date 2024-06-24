@@ -1,0 +1,19 @@
+{
+  "subjectArea" : {
+    "name" : "Sales",
+    "sourceBusinessModel" : "businessModel:Sales",
+    "tableOrder" : [ {
+      "name" : "presentationTable:Sales.Dim - Calendar"
+    }, {
+      "name" : "presentationTable:Sales.Dim - Deliveries"
+    }, {
+      "name" : "presentationTable:Sales.Dim - Items"
+    }, {
+      "name" : "presentationTable:Sales.Dim - Stores"
+    }, {
+      "name" : "presentationTable:Sales.Dim - Warehouse"
+    }, {
+      "name" : "presentationTable:Sales.Fact - Sales"
+    } ]
+  }
+}
