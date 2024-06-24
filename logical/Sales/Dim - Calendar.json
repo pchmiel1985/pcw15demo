@@ -92,7 +92,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Detail"
+      "logicalLevel" : "Month"
     }, {
       "name" : "MTH#",
       "dataType" : "NUMERIC",
@@ -107,7 +107,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Detail"
+      "logicalLevel" : "Month"
     }, {
       "name" : "Mth# Nm",
       "dataType" : "VARCHAR",
@@ -122,7 +122,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Detail"
+      "logicalLevel" : "Month"
     }, {
       "name" : "QTR",
       "dataType" : "VARCHAR",
@@ -137,7 +137,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Detail"
+      "logicalLevel" : "Quarter"
     }, {
       "name" : "YEAR",
       "dataType" : "NUMERIC",
@@ -167,7 +167,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Detail"
+      "logicalLevel" : "Quarter"
     }, {
       "name" : "Per Y Mth#",
       "dataType" : "VARCHAR",
@@ -182,7 +182,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Detail"
+      "logicalLevel" : "Month"
     }, {
       "name" : "Fin Mth#",
       "dataType" : "NUMERIC",
@@ -197,7 +197,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Detail"
+      "logicalLevel" : "Month"
     }, {
       "name" : "Fin Qtr",
       "dataType" : "VARCHAR",
@@ -212,7 +212,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Detail"
+      "logicalLevel" : "Quarter"
     }, {
       "name" : "Fin Year",
       "dataType" : "VARCHAR",
@@ -242,7 +242,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Detail"
+      "logicalLevel" : "Quarter"
     }, {
       "name" : "Per Fin Mth#",
       "dataType" : "VARCHAR",
@@ -257,7 +257,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Detail"
+      "logicalLevel" : "Month"
     }, {
       "name" : "Fin Mth# Nm",
       "dataType" : "VARCHAR",
@@ -272,7 +272,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Detail"
+      "logicalLevel" : "Month"
     } ],
     "logicalTableSources" : [ {
       "name" : "Dim - Calendar",
@@ -305,11 +305,26 @@
         "grandTotalLevel" : false,
         "disableAggregateToHigherLevel" : false,
         "primaryKey" : [ "YEAR" ],
-        "displayKey" : "YEAR"
+        "displayKey" : "YEAR",
+        "chronologicalKey" : [ "YEAR" ]
+      }, {
+        "name" : "Quarter",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "displayKey" : "QTR",
+        "chronologicalKey" : [ "QTR" ]
+      }, {
+        "name" : "Month",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "displayKey" : "MTH#",
+        "chronologicalKey" : [ "MTH#" ]
       } ],
       "logicalHierarchies" : [ {
         "name" : "Calendar",
-        "levels" : [ "Total", "Year", "Detail" ]
+        "levels" : [ "Total", "Year", "Quarter", "Month", "Detail" ]
       } ]
     }
   }

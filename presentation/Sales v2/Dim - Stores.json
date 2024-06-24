@@ -35,15 +35,15 @@
       }, {
         "name" : "City",
         "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Stores.City",
-        "displayColumn" : "presentationColumn:Sales.Dim - Stores.CITY"
+        "displayColumn" : "presentationColumn:Sales v2.Dim - Stores.CITY"
       }, {
         "name" : "State",
         "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Stores.State",
-        "displayColumn" : "presentationColumn:Sales.Dim - Stores.STATE"
+        "displayColumn" : "presentationColumn:Sales v2.Dim - Stores.STATE"
       }, {
         "name" : "Detail",
         "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Stores.Detail",
-        "displayColumn" : "presentationColumn:Sales.Dim - Stores.Store Id"
+        "displayColumn" : "presentationColumn:Sales v2.Dim - Stores.STORE"
       } ]
     } ]
   }

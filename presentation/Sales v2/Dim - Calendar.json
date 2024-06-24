@@ -67,12 +67,22 @@
       }, {
         "name" : "Year",
         "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Calendar.Year",
-        "displayColumn" : "presentationColumn:Sales.Dim - Calendar.YEAR",
+        "displayColumn" : "presentationColumn:Sales v2.Dim - Calendar.YEAR",
+        "localization" : { }
+      }, {
+        "name" : "Quarter",
+        "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Calendar.Quarter",
+        "displayColumn" : "presentationColumn:Sales v2.Dim - Calendar.QTR",
+        "localization" : { }
+      }, {
+        "name" : "Month",
+        "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Calendar.Month",
+        "displayColumn" : "presentationColumn:Sales v2.Dim - Calendar.MTH#",
         "localization" : { }
       }, {
         "name" : "Detail",
         "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Calendar.Detail",
-        "displayColumn" : "presentationColumn:Sales.Dim - Calendar.Day Date",
+        "displayColumn" : "presentationColumn:Sales v2.Dim - Calendar.Day Date",
         "localization" : { }
       } ]
     } ]

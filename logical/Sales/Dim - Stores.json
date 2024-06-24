@@ -150,8 +150,7 @@
         "grandTotalLevel" : false,
         "disableAggregateToHigherLevel" : false,
         "primaryKey" : [ "Store Id" ],
-        "displayKey" : "Store Id",
-        "preferredDrillPath" : [ "logicalLevel:Sales.Dim - Stores.State" ]
+        "displayKey" : "Store Id"
       }, {
         "name" : "City",
         "numberOfElements" : 1,
@@ -165,8 +164,7 @@
         "grandTotalLevel" : false,
         "disableAggregateToHigherLevel" : false,
         "primaryKey" : [ "STATE" ],
-        "displayKey" : "STATE",
-        "preferredDrillPath" : [ "logicalLevel:Sales.Dim - Stores.City" ]
+        "displayKey" : "STATE"
       } ],
       "logicalHierarchies" : [ {
         "name" : "Stores",

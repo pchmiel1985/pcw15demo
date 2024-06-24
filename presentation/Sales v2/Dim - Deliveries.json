@@ -29,7 +29,7 @@
       }, {
         "name" : "Detail",
         "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Deliveries.Detail",
-        "displayColumn" : "presentationColumn:Sales.Dim - Deliveries.Order #"
+        "displayColumn" : "presentationColumn:Sales v2.Dim - Deliveries.Order #"
       } ]
     } ]
   }

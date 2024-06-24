@@ -38,7 +38,7 @@
       }, {
         "name" : "Detail",
         "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Warehouse.Detail",
-        "displayColumn" : "presentationColumn:Sales.Dim - Warehouse.Store Id"
+        "displayColumn" : "presentationColumn:Sales v2.Dim - Warehouse.Store Id"
       } ]
     } ]
   }

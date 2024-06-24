@@ -29,11 +29,11 @@
       }, {
         "name" : "Category",
         "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Items.Category",
-        "displayColumn" : "presentationColumn:Sales.Dim - Items.CATEGORY"
+        "displayColumn" : "presentationColumn:Sales v2.Dim - Items.CATEGORY"
       }, {
         "name" : "Detail",
         "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Items.Detail",
-        "displayColumn" : "presentationColumn:Sales.Dim - Items.Item Id"
+        "displayColumn" : "presentationColumn:Sales v2.Dim - Items.Item Id"
       } ]
     } ]
   }
