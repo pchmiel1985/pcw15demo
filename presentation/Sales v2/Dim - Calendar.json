@@ -55,36 +55,6 @@
     }, {
       "name" : "Fin Mth# Nm",
       "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Calendar.Fin Mth# Nm"
-    } ],
-    "hierarchies" : [ {
-      "name" : "Calendar",
-      "sourceLogicalTable" : "logicalTable:Sales.Dim - Calendar",
-      "localization" : { },
-      "levels" : [ {
-        "name" : "Total",
-        "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Calendar.Total",
-        "localization" : { }
-      }, {
-        "name" : "Year",
-        "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Calendar.Year",
-        "displayColumn" : "presentationColumn:Sales v2.Dim - Calendar.YEAR",
-        "localization" : { }
-      }, {
-        "name" : "Quarter",
-        "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Calendar.Quarter",
-        "displayColumn" : "presentationColumn:Sales v2.Dim - Calendar.QTR",
-        "localization" : { }
-      }, {
-        "name" : "Month",
-        "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Calendar.Month",
-        "displayColumn" : "presentationColumn:Sales v2.Dim - Calendar.MTH#",
-        "localization" : { }
-      }, {
-        "name" : "Detail",
-        "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Calendar.Detail",
-        "displayColumn" : "presentationColumn:Sales v2.Dim - Calendar.Day Date",
-        "localization" : { }
-      } ]
     } ]
   }
 }

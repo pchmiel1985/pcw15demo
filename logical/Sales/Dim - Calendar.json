@@ -62,7 +62,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Year"
+      "logicalLevel" : "Detail"
     }, {
       "name" : "Week End",
       "dataType" : "VARCHAR",
@@ -92,7 +92,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Month"
+      "logicalLevel" : "Detail"
     }, {
       "name" : "MTH#",
       "dataType" : "NUMERIC",
@@ -122,7 +122,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Month"
+      "logicalLevel" : "Detail"
     }, {
       "name" : "QTR",
       "dataType" : "VARCHAR",
@@ -167,7 +167,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Quarter"
+      "logicalLevel" : "Detail"
     }, {
       "name" : "Per Y Mth#",
       "dataType" : "VARCHAR",
@@ -182,7 +182,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Month"
+      "logicalLevel" : "Detail"
     }, {
       "name" : "Fin Mth#",
       "dataType" : "NUMERIC",
@@ -197,7 +197,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Month"
+      "logicalLevel" : "Detail"
     }, {
       "name" : "Fin Qtr",
       "dataType" : "VARCHAR",
@@ -212,7 +212,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Quarter"
+      "logicalLevel" : "Detail"
     }, {
       "name" : "Fin Year",
       "dataType" : "VARCHAR",
@@ -227,7 +227,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Year"
+      "logicalLevel" : "Detail"
     }, {
       "name" : "Per Fin Qtr",
       "dataType" : "VARCHAR",
@@ -242,7 +242,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Quarter"
+      "logicalLevel" : "Detail"
     }, {
       "name" : "Per Fin Mth#",
       "dataType" : "VARCHAR",
@@ -257,7 +257,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Month"
+      "logicalLevel" : "Detail"
     }, {
       "name" : "Fin Mth# Nm",
       "dataType" : "VARCHAR",
@@ -272,7 +272,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Month"
+      "logicalLevel" : "Detail"
     } ],
     "logicalTableSources" : [ {
       "name" : "Dim - Calendar",
@@ -284,9 +284,11 @@
       "enableFragmentSelection" : false,
       "distinctValues" : false
     } ],
-    "hierarchyType" : "TIME",
+    "hierarchyType" : "LEVEL_BASED",
     "levelBasedHierarchy" : {
       "defaultRootLevel" : "Total",
+      "ragged" : false,
+      "skipped" : true,
       "logicalLevels" : [ {
         "name" : "Total",
         "numberOfElements" : 1,
@@ -305,22 +307,21 @@
         "grandTotalLevel" : false,
         "disableAggregateToHigherLevel" : false,
         "primaryKey" : [ "YEAR" ],
-        "displayKey" : "YEAR",
-        "chronologicalKey" : [ "YEAR" ]
+        "displayKey" : "YEAR"
       }, {
         "name" : "Quarter",
         "numberOfElements" : 1,
         "grandTotalLevel" : false,
         "disableAggregateToHigherLevel" : false,
-        "displayKey" : "QTR",
-        "chronologicalKey" : [ "QTR" ]
+        "primaryKey" : [ "QTR" ],
+        "displayKey" : "QTR"
       }, {
         "name" : "Month",
         "numberOfElements" : 1,
         "grandTotalLevel" : false,
         "disableAggregateToHigherLevel" : false,
-        "displayKey" : "MTH#",
-        "chronologicalKey" : [ "MTH#" ]
+        "primaryKey" : [ "MTH#" ],
+        "displayKey" : "MTH#"
       } ],
       "logicalHierarchies" : [ {
         "name" : "Calendar",
