@@ -55,6 +55,21 @@
     }, {
       "name" : "Fin Mth# Nm",
       "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Calendar.Fin Mth# Nm"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Calendar",
+      "sourceLogicalTable" : "logicalTable:Sales.Dim - Calendar",
+      "localization" : { },
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Calendar.Total",
+        "localization" : { }
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Calendar.Detail",
+        "displayColumn" : "presentationColumn:Sales v2.Dim - Calendar.Day Date",
+        "localization" : { }
+      } ]
     } ]
   }
 }
