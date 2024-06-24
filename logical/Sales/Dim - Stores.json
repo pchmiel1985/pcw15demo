@@ -150,21 +150,24 @@
         "grandTotalLevel" : false,
         "disableAggregateToHigherLevel" : false,
         "primaryKey" : [ "Store Id" ],
-        "displayKey" : "Store Id"
+        "displayKey" : "Store Id",
+        "preferredDrillPath" : [ "logicalLevel:Sales.Dim - Stores.State" ]
       }, {
         "name" : "City",
         "numberOfElements" : 1,
         "grandTotalLevel" : false,
         "disableAggregateToHigherLevel" : false,
         "primaryKey" : [ "CITY" ],
-        "displayKey" : "CITY"
+        "displayKey" : "CITY",
+        "preferredDrillPath" : [ "logicalLevel:Sales.Dim - Calendar.Total" ]
       }, {
         "name" : "State",
         "numberOfElements" : 1,
         "grandTotalLevel" : false,
         "disableAggregateToHigherLevel" : false,
         "primaryKey" : [ "STATE" ],
-        "displayKey" : "STATE"
+        "displayKey" : "STATE",
+        "preferredDrillPath" : [ "logicalLevel:Sales.Dim - Stores.City" ]
       } ],
       "logicalHierarchies" : [ {
         "name" : "Stores",

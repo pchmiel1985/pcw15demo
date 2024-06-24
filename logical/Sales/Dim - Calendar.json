@@ -300,28 +300,32 @@
         "grandTotalLevel" : false,
         "disableAggregateToHigherLevel" : false,
         "primaryKey" : [ "Day Date" ],
-        "displayKey" : "Day Date"
+        "displayKey" : "Day Date",
+        "preferredDrillPath" : [ "logicalLevel:Sales.Dim - Calendar.Month" ]
       }, {
         "name" : "Year",
         "numberOfElements" : 1,
         "grandTotalLevel" : false,
         "disableAggregateToHigherLevel" : false,
         "primaryKey" : [ "YEAR" ],
-        "displayKey" : "YEAR"
+        "displayKey" : "YEAR",
+        "preferredDrillPath" : [ "logicalLevel:Sales.Dim - Calendar.Total" ]
       }, {
         "name" : "Month",
         "numberOfElements" : 1,
         "grandTotalLevel" : false,
         "disableAggregateToHigherLevel" : false,
         "primaryKey" : [ "MTH#" ],
-        "displayKey" : "MTH#"
+        "displayKey" : "MTH#",
+        "preferredDrillPath" : [ "logicalLevel:Sales.Dim - Calendar.Quarter" ]
       }, {
         "name" : "Quarter",
         "numberOfElements" : 1,
         "grandTotalLevel" : false,
         "disableAggregateToHigherLevel" : false,
         "primaryKey" : [ "QTR" ],
-        "displayKey" : "QTR"
+        "displayKey" : "QTR",
+        "preferredDrillPath" : [ "logicalLevel:Sales.Dim - Calendar.Year" ]
       } ],
       "logicalHierarchies" : [ {
         "name" : "Calendar",
