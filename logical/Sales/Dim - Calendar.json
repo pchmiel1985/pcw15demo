@@ -107,7 +107,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Detail"
+      "logicalLevel" : "Month"
     }, {
       "name" : "Mth# Nm",
       "dataType" : "VARCHAR",
@@ -137,7 +137,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Detail"
+      "logicalLevel" : "Quarter"
     }, {
       "name" : "YEAR",
       "dataType" : "NUMERIC",
@@ -152,7 +152,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Detail"
+      "logicalLevel" : "Year"
     }, {
       "name" : "Per Y Qtr",
       "dataType" : "VARCHAR",
@@ -301,10 +301,31 @@
         "disableAggregateToHigherLevel" : false,
         "primaryKey" : [ "Day Date" ],
         "displayKey" : "Day Date"
+      }, {
+        "name" : "Year",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "YEAR" ],
+        "displayKey" : "YEAR"
+      }, {
+        "name" : "Quarter",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "QTR" ],
+        "displayKey" : "QTR"
+      }, {
+        "name" : "Month",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "MTH#" ],
+        "displayKey" : "MTH#"
       } ],
       "logicalHierarchies" : [ {
         "name" : "Calendar",
-        "levels" : [ "Total", "Detail" ]
+        "levels" : [ "Total", "Year", "Quarter", "Month", "Detail" ]
       } ]
     }
   }
