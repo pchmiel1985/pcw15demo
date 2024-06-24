@@ -97,8 +97,7 @@
       },
       "aggregation" : {
         "rule" : "SUM",
-        "dataIsDense" : false,
-        "aggregateByLevels" : [ "logicalLevel:Sales.Dim - Calendar.Detail", "logicalLevel:Sales.Dim - Deliveries.Detail", "logicalLevel:Sales.Dim - Items.Detail", "logicalLevel:Sales.Dim - Stores.Detail", "logicalLevel:Sales.Dim - Warehouse.Detail" ]
+        "dataIsDense" : false
       }
     } ],
     "logicalTableSources" : [ {
@@ -107,6 +106,7 @@
       "tableMapping" : {
         "tables" : [ "physicalTable:MyDatabase.PCW15.Fact - Sales" ]
       },
+      "dataGranularity" : [ "logicalLevel:Sales.Dim - Calendar.Detail", "logicalLevel:Sales.Dim - Deliveries.Detail", "logicalLevel:Sales.Dim - Items.Detail", "logicalLevel:Sales.Dim - Stores.Detail", "logicalLevel:Sales.Dim - Warehouse.Detail" ],
       "combineWithOtherFragments" : false,
       "enableFragmentSelection" : false,
       "distinctValues" : false
