@@ -158,8 +158,7 @@
         "grandTotalLevel" : false,
         "disableAggregateToHigherLevel" : false,
         "primaryKey" : [ "CITY" ],
-        "displayKey" : "CITY",
-        "preferredDrillPath" : [ "logicalLevel:Sales.Dim - Calendar.Total" ]
+        "displayKey" : "CITY"
       }, {
         "name" : "State",
         "numberOfElements" : 1,

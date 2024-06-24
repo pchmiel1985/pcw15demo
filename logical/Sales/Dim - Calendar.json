@@ -47,7 +47,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Month"
+      "logicalLevel" : "Detail"
     }, {
       "name" : "Day in Year",
       "dataType" : "NUMERIC",
@@ -92,7 +92,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Month"
+      "logicalLevel" : "Detail"
     }, {
       "name" : "MTH#",
       "dataType" : "NUMERIC",
@@ -107,7 +107,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Month"
+      "logicalLevel" : "Detail"
     }, {
       "name" : "Mth# Nm",
       "dataType" : "VARCHAR",
@@ -122,7 +122,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Month"
+      "logicalLevel" : "Detail"
     }, {
       "name" : "QTR",
       "dataType" : "VARCHAR",
@@ -137,7 +137,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Quarter"
+      "logicalLevel" : "Detail"
     }, {
       "name" : "YEAR",
       "dataType" : "NUMERIC",
@@ -167,7 +167,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Quarter"
+      "logicalLevel" : "Detail"
     }, {
       "name" : "Per Y Mth#",
       "dataType" : "VARCHAR",
@@ -182,7 +182,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Month"
+      "logicalLevel" : "Detail"
     }, {
       "name" : "Fin Mth#",
       "dataType" : "NUMERIC",
@@ -197,7 +197,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Month"
+      "logicalLevel" : "Detail"
     }, {
       "name" : "Fin Qtr",
       "dataType" : "VARCHAR",
@@ -212,7 +212,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Quarter"
+      "logicalLevel" : "Detail"
     }, {
       "name" : "Fin Year",
       "dataType" : "VARCHAR",
@@ -242,7 +242,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Quarter"
+      "logicalLevel" : "Detail"
     }, {
       "name" : "Per Fin Mth#",
       "dataType" : "VARCHAR",
@@ -257,7 +257,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Month"
+      "logicalLevel" : "Detail"
     }, {
       "name" : "Fin Mth# Nm",
       "dataType" : "VARCHAR",
@@ -272,7 +272,7 @@
           }
         } ]
       },
-      "logicalLevel" : "Month"
+      "logicalLevel" : "Detail"
     } ],
     "logicalTableSources" : [ {
       "name" : "Dim - Calendar",
@@ -284,20 +284,17 @@
       "enableFragmentSelection" : false,
       "distinctValues" : false
     } ],
-    "hierarchyType" : "LEVEL_BASED",
+    "hierarchyType" : "TIME",
     "levelBasedHierarchy" : {
       "defaultRootLevel" : "Total",
-      "ragged" : false,
-      "skipped" : true,
       "logicalLevels" : [ {
         "name" : "Total",
         "numberOfElements" : 1,
         "grandTotalLevel" : true,
-        "disableAggregateToHigherLevel" : false,
-        "preferredDrillPath" : [ "logicalLevel:Sales.Dim - Calendar.Year" ]
+        "disableAggregateToHigherLevel" : false
       }, {
         "name" : "Detail",
-        "numberOfElements" : 1000,
+        "numberOfElements" : 1,
         "grandTotalLevel" : false,
         "disableAggregateToHigherLevel" : false,
         "primaryKey" : [ "Day Date" ],
@@ -308,28 +305,11 @@
         "grandTotalLevel" : false,
         "disableAggregateToHigherLevel" : false,
         "primaryKey" : [ "YEAR" ],
-        "displayKey" : "YEAR",
-        "preferredDrillPath" : [ "logicalLevel:Sales.Dim - Calendar.Quarter" ]
-      }, {
-        "name" : "Month",
-        "numberOfElements" : 1,
-        "grandTotalLevel" : false,
-        "disableAggregateToHigherLevel" : false,
-        "primaryKey" : [ "MTH#" ],
-        "displayKey" : "MTH#",
-        "preferredDrillPath" : [ "logicalLevel:Sales.Dim - Calendar.Detail" ]
-      }, {
-        "name" : "Quarter",
-        "numberOfElements" : 1,
-        "grandTotalLevel" : false,
-        "disableAggregateToHigherLevel" : false,
-        "primaryKey" : [ "QTR" ],
-        "displayKey" : "QTR",
-        "preferredDrillPath" : [ "logicalLevel:Sales.Dim - Calendar.Month" ]
+        "displayKey" : "YEAR"
       } ],
       "logicalHierarchies" : [ {
-        "name" : "Calendar",
-        "levels" : [ "Total", "Year", "Quarter", "Month", "Detail" ]
+        "name" : "H1",
+        "levels" : [ "Total", "Year", "Detail" ]
       } ]
     }
   }
